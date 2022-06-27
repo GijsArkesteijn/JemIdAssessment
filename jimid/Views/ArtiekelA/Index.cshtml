@@ -1,0 +1,61 @@
+@model IEnumerable<Artiekel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Naam)
+                <a asp-controller="ArtiekelA" asp-action="Index" asp-route-sorteer="naam_oplopend">↑</a>
+                <a asp-controller="ArtiekelA" asp-action="Index" asp-route-sorteer="naam_aflopend">↓</a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Potmaat)
+                <a asp-controller="ArtiekelA" asp-action="Index" asp-route-sorteer="potmaat_oplopend">↑</a>
+                <a asp-controller="ArtiekelA" asp-action="Index" asp-route-sorteer="potmaat_aflopend">↓</a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Planthoogte)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kleur)
+                <a asp-controller="ArtiekelA" asp-action="Index" asp-route-sorteer="kleur_oplopend">↑</a>
+                <a asp-controller="ArtiekelA" asp-action="Index" asp-route-sorteer="kleur_aflopend">↓</a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Productgroep)
+                <a asp-controller="ArtiekelA" asp-action="Index" asp-route-sorteer="productgroep_oplopend">↑</a>
+                <a asp-controller="ArtiekelA" asp-action="Index" asp-route-sorteer="productgroep_aflopend">↓</a>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Naam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Potmaat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Planthoogte)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kleur)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Productgroep)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+@if((bool)ViewData["heeftVolgende"] ){
+        <a asp-controller="ArtiekelA" asp-action="Index" asp-route-pagina='@((int)ViewData["pagina"]+1)'>Volgende</a>
+}@if((bool)ViewData["heeftVorige"] ){
+        <a asp-controller="ArtiekelA" asp-action="Index" asp-route-pagina='@((int)ViewData["pagina"]-1)'>Vorige</a>
+}
