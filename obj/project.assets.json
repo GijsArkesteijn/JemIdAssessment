@@ -7415,11 +7415,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Hopla\\JemIdAssessment\\jimid\\jimid.csproj",
+      "projectUniqueName": "D:\\Hopla\\JemIdAssessment\\jimid.csproj",
       "projectName": "jimid",
-      "projectPath": "D:\\Hopla\\JemIdAssessment\\jimid\\jimid.csproj",
+      "projectPath": "D:\\Hopla\\JemIdAssessment\\jimid.csproj",
       "packagesPath": "C:\\Users\\Gijs\\.nuget\\packages\\",
-      "outputPath": "D:\\Hopla\\JemIdAssessment\\jimid\\obj\\",
+      "outputPath": "D:\\Hopla\\JemIdAssessment\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
