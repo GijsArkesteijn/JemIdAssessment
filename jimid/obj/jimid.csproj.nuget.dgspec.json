@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gijs\\Documents\\Scorro\\hbo\\Stage\\jimid\\jimid.csproj": {}
+    "D:\\Hopla\\JemIdAssessment\\jimid\\jimid.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gijs\\Documents\\Scorro\\hbo\\Stage\\jimid\\jimid.csproj": {
+    "D:\\Hopla\\JemIdAssessment\\jimid\\jimid.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gijs\\Documents\\Scorro\\hbo\\Stage\\jimid\\jimid.csproj",
+        "projectUniqueName": "D:\\Hopla\\JemIdAssessment\\jimid\\jimid.csproj",
         "projectName": "jimid",
-        "projectPath": "C:\\Users\\Gijs\\Documents\\Scorro\\hbo\\Stage\\jimid\\jimid.csproj",
+        "projectPath": "D:\\Hopla\\JemIdAssessment\\jimid\\jimid.csproj",
         "packagesPath": "C:\\Users\\Gijs\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gijs\\Documents\\Scorro\\hbo\\Stage\\jimid\\obj\\",
+        "outputPath": "D:\\Hopla\\JemIdAssessment\\jimid\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
